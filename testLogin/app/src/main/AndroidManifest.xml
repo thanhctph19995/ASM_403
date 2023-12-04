@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
@@ -13,18 +15,29 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TestLogin"
+        android:theme="@style/Theme.Testlogin"
         tools:targetApi="31">
         <activity
-            android:name=".test.ProfileActivity"
+            android:name=".user.RegisterUserActivity"
             android:exported="false" />
         <activity
-            android:name=".test.DSActivity"
+            android:name=".user.DetailUserActivity"
             android:exported="false" />
         <activity
-            android:name=".test.login2Activity"
-            android:exported="true"
-            android:label="@string/app_name">
+            android:name=".user.UserMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.UploadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.LoginActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,28 +45,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".test.PhoneActivity"
+            android:name=".admin.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".test.ForGotActivity"
+            android:name=".admin.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".test.LoginActivity"
+            android:name=".user.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".test.RegisterActivity"
+            android:name=".user.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".SignUpActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SignInActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SplashActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".user.MainActivity"
             android:exported="false" />
     </application>
 

@@ -8,7 +8,7 @@
     tools:context=".admin.MainActivity">
 
     <androidx.appcompat.widget.SearchView
-        android:layout_width="280dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginStart="12dp"
@@ -30,24 +30,5 @@
         android:id="@+id/recyclerView"
         android:scrollbars="vertical"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_margin="40dp"
-        android:backgroundTint="@color/lavender"
-        app:tint = "@color/white"
-        android:src="@drawable/ic_dashboard_black_24dp" />
-
-    <ImageButton
-        android:id="@+id/buttonAdd"
-        android:layout_marginLeft="320dp"
-        android:layout_marginTop="15dp"
-        android:layout_width="50dp"
-        android:src="@drawable/baseline_account_circle_24"
-        android:layout_height="50dp"
-        android:text="add" />
 
 </RelativeLayout>
